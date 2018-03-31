@@ -1,0 +1,195 @@
+*
+{
+	margin:0;
+}
+
+body{
+  background: #02010a;
+  font-family: 'Dancing Script', cursive;
+  font-size: 100%;}
+
+.contenido{
+	display: flex;
+	flex-direction: column;
+}
+
+.c1 h1 {
+	padding-left: 10px;
+}
+
+.c1 nav{
+	padding-bottom: 20px;
+	padding-right: 10px;
+}
+.c1 {
+	background-color: #5b7989;
+	border-radius: 10px 10px 0px 0px;
+  -moz-border-radius: 10px 10px 0px 0px;
+  -webkit-border-radius: 10px 10px 0px 0px;
+	color: white;
+	padding-bottom: 20px;
+	padding-top: 10px;
+	text-shadow:2px 0 0 #02010a;
+
+}
+.c1 nav a{
+  padding: 10px;
+  color: #fff;
+	text-shadow: none;
+}
+
+#inicio{
+  text-decoration: none;
+}
+
+
+
+
+.c2{
+	background-color: #82c3a6;}
+
+.c3{
+	background-color: #d5c75f;}
+
+.c4{
+	background-color: #C6d5c5;
+	border-radius: 0px 0px 10px 10px;
+	-moz-border-radius: 0px 0px 10px 10px;
+	-webkit-border-radius: 0px 0px 10px 10px;
+}
+
+@media (max-width: 900px){
+	.contenido{
+		width: 100%;}
+	.c3 {
+			display: flex;
+			flex-direction: column;}
+
+
+ .img3{
+	 max-width: 70% }
+	 .c1 nav ul li{
+			 float: none;
+			 display: inline;}
+	header{
+		text-align: center;
+	}
+	.c4{
+		display: flex;
+		flex-wrap: wrap;
+	text-align: center;}
+
+
+}
+
+@media (min-width: 900px){
+	.c1, .c2, .c3, .c4{
+		width: 100%;
+		margin: 0 auto;
+		}
+		.contenido{
+			width: 900px;
+			margin: 0 auto;}
+
+		.c1 nav ul li{
+			  float: right;
+				display: inline;}
+	.c3 {
+		display: flex;
+					flex-direction: row;}
+				}
+	.c4{
+	display: flex;
+				flex-direction: row;}
+
+.img1{
+			width: 70%;
+			margin: 15%;}
+
+
+
+
+.img2{
+	  width: 70%;
+		margin: 10%;
+		margin-bottom: 5%;
+		float: left;
+		height: 60%;
+	}
+
+.img3{
+		 width:100%;
+		 margin: 17%;
+		 margin-bottom: 9%;
+		 float: right;
+		 height: 60%;
+	 }
+
+.c3 img{
+	border: 1px black solid;
+}
+img{
+	-webkit-filter: drop-shadow(2px 2px 2px #02010a);
+	filter: drop-shadow(2px 2px 2px #02010a);
+}
+h2{
+	text-align: center;
+	font-size: 1.5em;
+}
+h2 a{
+	color: black;
+}
+
+@keyframes img2-animacion {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(10deg);
+
+}
+}
+.c3 .img2:hover{
+	animation-name: img2-animacion;
+	animation-duration: 1s;
+	-webkit-filter: drop-shadow(3px 3px 3px #82c3a6);
+	filter: drop-shadow(3px 3px 3px #82c3a6);
+	border: 2px black solid;
+}
+
+@keyframes img3-animacion {
+	from {
+		transform: translate(0px);
+	}
+	to {
+		transform: translate(20px, -5px);
+
+}
+}
+.c3 .img3:hover{
+	animation-name: img3-animacion;
+	animation-duration: 1s;
+	-webkit-filter: drop-shadow(3px 3px 3px #82c3a6);
+	filter: drop-shadow(3px 3px 3px #82c3a6);
+	border: 2px black solid;
+}
+footer div{
+	margin: 5% auto;
+}
+
+
+
+@-webkit-keyframes slidein{
+	0%{
+		margin-top: 150%;}
+	60%{
+		margin-top: 5%;}
+
+	100%{
+		margin-top: 0%;}
+}
+
+ header{
+	animation-name: slidein;
+
+	animation-duration: 1s;}
